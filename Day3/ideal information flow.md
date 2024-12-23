@@ -1,0 +1,1 @@
+A flow of information that maximises fulfillment of informational exchange necessary for a collaboration while minimising the possibility of any problematic retention or use of said info thereafter.
