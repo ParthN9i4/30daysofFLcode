@@ -185,7 +185,7 @@ _arxiv_fetched_at = None
 async def fetch_arxiv_papers():
     global _arxiv_cache, _arxiv_fetched_at
     now = datetime.now(timezone.utc)
-    if _arxiv_fetched_at and (now - _arxiv_fetched_at).seconds < 3600 and _arxiv_cache:
+    if _arxiv_fetched_at and (now - _arxiv_fetched_at).total_seconds() < 3600 and _arxiv_cache:
         return _arxiv_cache
 
     papers = []
@@ -257,7 +257,7 @@ _rss_fetched_at = None
 async def fetch_rss_items():
     global _rss_cache, _rss_fetched_at
     now = datetime.now(timezone.utc)
-    if _rss_fetched_at and (now - _rss_fetched_at).seconds < 3600 and _rss_cache:
+    if _rss_fetched_at and (now - _rss_fetched_at).total_seconds() < 3600 and _rss_cache:
         return _rss_cache
 
     items = []
