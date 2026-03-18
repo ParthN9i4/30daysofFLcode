@@ -1,0 +1,171 @@
+{
+  "project_name": "30 Days of FL Code - Academic Blog Ideation Tool",
+  "version": "1.0",
+  "design_philosophy": {
+    "identity": "The Cipher Dispatch",
+    "vibe": "Academic, Precision, Flow State, Dark Academia meets Cyber-Security",
+    "core_principles": [
+      "Content is Sacred: Text readability is the #1 priority.",
+      "Dark Mode First: Reduced eye strain for long research sessions.",
+      "Information Density: High density for lists, focused spacing for reading.",
+      "Subtle Depth: Use layered blacks and grays, not flat colors."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "\"IBM Plex Serif\", serif",
+      "body": "\"Inter\", sans-serif",
+      "code": "\"JetBrains Mono\", monospace",
+      "accent": "\"Barlow Condensed\", sans-serif"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-semibold tracking-tight leading-tight",
+      "h2": "text-3xl md:text-4xl font-medium tracking-tight",
+      "h3": "text-2xl font-medium tracking-normal",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-sm text-muted-foreground tracking-wide uppercase",
+      "code_block": "text-sm font-mono bg-muted/50 p-1 rounded"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');"
+    ]
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#0B0C15",
+      "foreground": "#EDEDED",
+      "card": "#12131C",
+      "card_foreground": "#FFFFFF",
+      "popover": "#161822",
+      "popover_foreground": "#FFFFFF",
+      "primary": "#7C3AED",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#1E293B",
+      "secondary_foreground": "#FFFFFF",
+      "muted": "#23242F",
+      "muted_foreground": "#94A3B8",
+      "accent": "#10B981",
+      "accent_foreground": "#FFFFFF",
+      "destructive": "#EF4444",
+      "destructive_foreground": "#FFFFFF",
+      "border": "#2E2F3E",
+      "input": "#2E2F3E",
+      "ring": "#7C3AED"
+    },
+    "chart_colors": [
+      "#7C3AED",
+      "#10B981",
+      "#3B82F6",
+      "#F59E0B",
+      "#EF4444"
+    ],
+    "custom_tokens": {
+      "bg-obsidian": "#0B0C15",
+      "bg-obsidian-light": "#12131C",
+      "text-electric-violet": "#A78BFA",
+      "text-neon-cyan": "#2DD4BF"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "1px solid rgba(255, 255, 255, 0.08)",
+    "glassmorphism": "backdrop-blur-xl bg-black/40 border-white/10",
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.5)",
+      "md": "0 4px 6px -1px rgba(0, 0, 0, 0.5)",
+      "glow": "0 0 15px rgba(124, 58, 237, 0.3)"
+    },
+    "radius": {
+      "default": "0.5rem",
+      "sm": "0.3rem",
+      "lg": "0.75rem"
+    },
+    "gradients": {
+      "hero": "radial-gradient(circle at top center, rgba(124, 58, 237, 0.15) 0%, rgba(11, 12, 21, 0) 50%)",
+      "card_hover": "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%)"
+    }
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_system": "grid grid-cols-1 md:grid-cols-12 gap-6",
+    "sidebar_width": "w-64",
+    "dashboard_grid": {
+      "feed": "col-span-12 lg:col-span-8",
+      "ideation": "col-span-12 lg:col-span-4"
+    },
+    "spacing": {
+      "section_gap": "py-12 md:py-20",
+      "component_gap": "space-y-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border/50",
+      "ghost": "hover:bg-accent/10 hover:text-accent",
+      "outline": "border border-input hover:bg-accent hover:text-accent-foreground"
+    },
+    "cards": {
+      "default": "bg-card text-card-foreground rounded-lg border border-border shadow-sm hover:border-primary/50 transition-colors duration-300",
+      "interactive": "hover:shadow-glow hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+    },
+    "inputs": {
+      "default": "bg-input/50 border-input focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-muted-foreground/50"
+    },
+    "tags": {
+      "base": "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+      "fhe": "bg-purple-500/10 text-purple-400 border border-purple-500/20",
+      "fl": "bg-blue-500/10 text-blue-400 border border-blue-500/20",
+      "vit": "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-out",
+    "hover_effects": "hover:scale-[1.01] active:scale-[0.99]",
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 10 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -10 }
+    }
+  },
+  "images": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1672623761758-c0dee2ce4c9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMG5ldXJhbCUyMG5ldHdvcmslMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzM4MjU0OTZ8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract Neural Network Dark Background",
+      "description": "Use as a subtle background for the Hero section or login page with low opacity overlay."
+    },
+    "ideation_placeholder": {
+      "url": "https://images.pexels.com/photos/17483869/pexels-photo-17483869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "3D Abstract Brain",
+      "description": "Use for empty states in the Ideation Studio."
+    },
+    "coding_texture": {
+      "url": "https://images.unsplash.com/photo-1753998943619-b9cd910887e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjBzY3JlZW4lMjBkYXJrJTIwbW9kZSUyMGNsb3NlJTIwdXB8ZW58MHx8fHwxNzczODI1NDk3fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Code Screen Close Up",
+      "description": "Use for the 'Source Feed' header or card backgrounds."
+    },
+    "library_mood": {
+      "url": "https://images.unsplash.com/photo-1770515927761-979f248c64d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsaWJyYXJ5JTIwaW50ZXJpb3IlMjBkYXJrJTIwYWNhZGVtaWF8ZW58MHx8fHwxNzczODI1NDk4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Dark Academia Library",
+      "description": "Use for the 'Saved Drafts' section cover."
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Setup: Ensure Tailwind CSS is configured with the custom colors defined in 'colors'. Use the 'dark' selector strategy.",
+    "2. Fonts: Add the Google Fonts import to your global CSS immediately.",
+    "3. Structure: Create a 'Layout' component that includes a fixed left Sidebar (glassmorphism) and a scrollable Main Content area.",
+    "4. Feed: The Source Feed should look like a 'Timeline' or 'Stream'—vertical line connecting items, distinct icons for 'Repo Note' vs 'ArXiv Paper'.",
+    "5. Ideation: The Ideation Studio is a split view. Left: Source selection (checklist). Right: Generation Output (Markdown editor style).",
+    "6. Theme: Default to DARK MODE. Do not force light mode unless explicitly toggled.",
+    "7. Testing: Add 'data-testid' to all buttons, inputs, and cards. Example: 'data-testid=\"generate-blog-btn\"'.",
+    "8. Icons: Use 'lucide-react' for all UI icons (Beaker, BookOpen, Brain, GitBranch, Shield, Lock).",
+    "9. Charts: Use Recharts for the 'Credit Usage' indicator (Simple Pie Chart or Radial Bar)."
+  ],
+  "universal_guidelines": [
+    "Do not use generic gradients. Use the 'hero' gradient defined above.",
+    "Do not center text in the main feed. Align left for readability.",
+    "Use 'sonner' for all toast notifications.",
+    "Ensure 4.5:1 contrast ratio for all text. Use lighter grays (#EDEDED) on dark backgrounds, never pure white (#FFFFFF) for body text to reduce glare."
+  ]
+}
